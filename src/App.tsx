@@ -1,11 +1,21 @@
+import Calculator from './component/Calculator/Calculator';
+import { AppContext, type ThemeType } from './context/App.context';
+
 import './App.css';
-import Calculator from './component/calculator/Calculator';
+import { useState } from 'react';
 
 function App() {
+    const [theme, setTheme] = useState<ThemeType>('light');
+
     return (
-        <div className="wrapper">
-            <Calculator />
-        </div>
+        <AppContext.Provider value={ {
+            theme,
+            setTheme
+        } }>
+            <div className="wrapper">
+                <Calculator />
+            </div>
+        </AppContext.Provider>
     );
 }
 
