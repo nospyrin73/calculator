@@ -1,0 +1,15 @@
+.calculator {
+    background-color: #FFF;
+    border-radius: var(--radius-main);
+    display: flex;
+    height: 800px;
+    width: 376px;
+
+    &__keypad {
+        align-self: flex-end;
+        border-radius: var(--radius-main);
+        background-color: #F9F9F9;
+        height: 50%;
+        width: 100%;
+    }
+}
