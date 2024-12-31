@@ -1,5 +1,5 @@
 .calculator {
-    background-color: #FFF;
+    background-color: var(--color-background);
     border-radius: var(--radius-main);
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
 
     &__keypad {
         border-radius: var(--radius-main);
-        background-color: #F9F9F9;
+        background-color: var(--color-foreground);
         height: 50%;
         width: 100%;
     }

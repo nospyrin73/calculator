@@ -1,7 +1,3 @@
-#root {
-    --radius-main: 35px;
-}
-
 .wrapper {
     align-items: center;
     background-color: #E7E8E8;
@@ -9,4 +5,19 @@
     height: 100%;
     justify-content: center;
     width: 100%;
+
+    --radius-main: 35px;
+
+    &.theme-light {
+        --color-background: #FFFFFF;
+        --color-foreground: #F9F9F9;
+        --color-item: #F7F7F7;
+    }
+
+    &.theme-dark {
+        --color-background: #22252D;
+        --color-foreground: #292D36;
+        --color-item: #272B33;
+    }
+
 }
