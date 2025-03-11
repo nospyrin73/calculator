@@ -10,7 +10,23 @@
         cursor: pointer;
     }
 
-    img {
+    svg {
         height: 20px;
+    }
+
+    .theme-light & {
+        fill: #DDDDDD;
+
+        button.active {
+            fill: #161A23;
+        }
+    }
+
+    .theme-dark & {
+        fill: #74767C;
+
+        button.active {
+            fill: #EBEBEC;
+        }
     }
 }
