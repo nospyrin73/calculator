@@ -1,0 +1,40 @@
+@font-face {
+    font-family: nimbus;
+    font-weight: 400;
+    src: url('../../assets/fonts/NimbusSan-Regular.otf');
+}
+
+@font-face {
+    font-family: nimbus;
+    font-weight: 700;
+    src: url('../../assets/fonts/NimbusSan-Bold.otf');
+}
+
+
+.keypad {
+    --column-number: 5;
+
+    display: grid;
+    font-family: nimbus;
+    font-size: 20px;
+    font-weight: 700;
+    gap: 20px;
+    grid-template-columns: repeat(var(--column-number), 1fr);
+
+    .key {
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        padding-block: 30px;
+
+        .theme-light & {
+            background-color: #F6F6F6;
+            color: #10141F;
+        }
+
+        .theme-dark & {
+            background-color: #262A32;
+            color: #FFF;
+        }
+    }
+}

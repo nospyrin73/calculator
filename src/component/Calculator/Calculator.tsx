@@ -4,6 +4,7 @@ import { AppContext } from "../../context/App.context";
 
 import './calculator.scss';
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
+import Keypad from "../Keypad/Keypad";
 
 export function Calculator(): ReactElement {
     const { theme } = useContext(AppContext);
@@ -14,7 +15,9 @@ export function Calculator(): ReactElement {
             <div className="calculator__screen">
                 <ThemeSwitcher />
             </div>
-            <div className="calculator__keypad"></div>
+            <div className="calculator__keypad">
+                <Keypad />
+            </div>
         </div>
     );
 }

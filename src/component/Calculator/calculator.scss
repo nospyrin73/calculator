@@ -3,10 +3,10 @@
     border-radius: var(--radius-main);
     display: flex;
     flex-direction: column;
-    height: 800px;
-    width: 376px;
+    width: 500px;
 
     &__screen {
+        min-height: 300px;
         flex: 1;
         position: relative;
 
@@ -22,6 +22,7 @@
         border-radius: var(--radius-main);
         background-color: var(--color-foreground);
         height: 50%;
+        padding: 25px;
         width: 100%;
     }
 }
